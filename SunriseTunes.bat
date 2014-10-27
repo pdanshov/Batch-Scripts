@@ -1,0 +1,1 @@
+start C:\Admin\SunriseTunes.vbs
