@@ -1,0 +1,32 @@
+
+
+This process requires that you can get to information on your XP machine, because you will need all of the .job files. But it will take all of your .job files and create the .xml and the associated scheduled tasks. A co-worker came up with the files and general process for me when I upgraded systems and had 260 .job files to transfer and I wrote it up to try to be able to help others in my same position. It's a little long, but it works, and that's all that matters. Hope it helps!
+
+    From XP machine, copy the schedsvc.dll and schtasks.exe files from C:\WINDOWS\system32\ onto a USB drive. a. If you can’t find the files on your XP machine, you can check here http://www.whatisdll.com/schedsvc-dll-repair-free-download-windows-78xpvista/ and here http://www.whatisdll.com/schtasks-exe-repair-free-download-windows-78xpvista/ for help.
+    From XP Machine, go to folder where .job files are stored (most likely C:\Windows\Tasks) and copy all .job files onto USB drive.
+    Create a folder on Vista/Win 7 Machine on your desk top for this process. Ex. C:\Users\username\Desktop\SchedTasks
+    Move .job files, .dll, and .exe files into the new folder on the Vista/Win 7 machine.
+    Open C:\WINDOWS\Tasks and copy all of the .job files into that folder as well.
+    Open a new notepad document and enter the following, without the quotation marks “dir /B >> dir.txt”
+    Save the text document the folder created on the desktop with the file name GetFiles
+    Change the .txt extension on the file to .bat and click Yes on the pop-up that asks if you are sure you want to change the extension.
+    Check to make sure that in the new folder you created on the desktop of the Vista/Win 7 machine you now have the following files: a. All of the .job files from your XP machine b. GetFiles.bat c. schedsvc.dll d. schtasks.exe
+    Double click on the GetFiles.bat.
+    A new file will appear called dir.txt Note --> It might appear as the very first file in the folder .
+    Open the dir.txt file. It will contain all of the names of the files in the folder.
+    Remove the file names for GetFiles.bat, schdsvc.dll, and schtasks.exe so you are left with only the .job file names.
+    Open a new Excel spreadsheet.
+    Type the following in the noted columns: a. Column A - schtasks b. Column B – /change c. Column C – /TN d. Column E – /RU e. Column F – your username f. Column G – /RP g. Column H – your password, if you have one
+    Copy the file names that are in the dir.txt file and paste them into Column D. (keep in mind that 'spaces' are not allowed in DOS, so replace them for '_ underscores'. You need to change the job names as well)
+    Copy down the other columns filled in on step 13 to match the number of file names listed.
+    Press CTRL+H. In “Find What” enter .job, leave “Replace With” blank, and click “Replace All”.
+    Click on File --> Save As and save the spreadsheet to a Text (MS-DOS) (*.txt) file to the folder you created with whatever file name you’d like Ex: Taskcmd. Click OK and Yes on the two pop-ups that will ask if you are sure you want to save the file to that format.
+    Close the spreadsheet (you can save it if you’d like, but it’s not used again), but it will have to be closed for the next steps.
+    Open the .txt file just created and make sure that none of the file names have the .job after them. Remove them if so (you can use the same CTRL+H method). Close the file when you are certain that all of the file names do not have the .job (remember to save the file if you had to make any changes).
+    Change the .txt extension to a .bat and click Yes when it asks if you are sure.
+    Click on the Start Menu and type cmd into the search bar, open the Command Prompt.
+    Type the path to the file in the folder on your desktop. Using the example above, this would be (without the quotes) “ cd C:\Users\username\Desktop\SchedTasks” and press enter.
+    In the new prompt type the name of the file created in step 18, including the extension. Using the example above, this would be (without the quotes) “Taskcmd.bat” and press enter.
+    You should now see all of the files being processed with a note of “SUCCESS” after each one.
+    Once the batch has completed, you will be able to open the Task Scheduler, click on Task Scheduler Library, and see all of your new tasks, ready to run, in center pane.
+

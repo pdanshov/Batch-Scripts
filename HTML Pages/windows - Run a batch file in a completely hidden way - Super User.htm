@@ -1,0 +1,2758 @@
+<!DOCTYPE html>
+<html itemscope="" itemtype="http://schema.org/QAPage"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <title>windows - Run a batch file in a completely hidden way - Super User</title>
+    <link rel="shortcut icon" href="http://cdn.sstatic.net/superuser/img/favicon.ico?v=c82914fca0a9">
+    <link rel="apple-touch-icon image_src" href="http://cdn.sstatic.net/superuser/img/apple-touch-icon.png?v=0ad5b7a83e49">
+    <link rel="search" type="application/opensearchdescription+xml" title="Super User" href="http://superuser.com/opensearch.xml">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@super_user">
+    <meta name="twitter:domain" content="superuser.com">
+    <meta property="og:type" content="website">
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="http://cdn.sstatic.net/superuser/img/apple-touch-icon@2.png?v=e869e4459439">
+    <meta name="twitter:title" property="og:title" itemprop="title name" content="Run a batch file in a completely hidden way">
+    <meta name="twitter:description" property="og:description" itemprop="description" content="I'm looking for some way to run a batch file (.bat) without anything visible to the user (no window, no taskbar name, .etc..).
+
+I don't want to use some program to do that, I'm looking for something ">
+    <meta property="og:url" content="http://superuser.com/questions/62525/run-a-batch-file-in-a-completely-hidden-way">
+    <link rel="canonical" href="http://superuser.com/questions/62525/run-a-batch-file-in-a-completely-hidden-way">
+
+    
+    
+    <script src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/ados" async="" type="text/javascript"></script><script src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/quant.js" async=""></script><script src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/beacon.js" async=""></script><script src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/analytics.js" async=""></script><script src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/ados.js" async="" type="text/javascript"></script><script src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/jquery.js"></script>
+    <script src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/stub.js"></script>
+    <link rel="stylesheet" type="text/css" href="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/all.css">
+    
+    <link rel="alternate" type="application/atom+xml" title="Feed for question 'Run a batch file in a completely hidden way'" href="http://superuser.com/feeds/question/62525">
+    <script>
+        
+        StackExchange.ready(function () {
+
+            StackExchange.using("postValidation", function () {
+                StackExchange.postValidation.initOnBlurAndSubmit($('#post-form'), 2, 'answer');
+            });
+
+            
+            StackExchange.question.init({showAnswerHelp:true,totalCommentCount:6,shownCommentCount:3,highlightColor:'#BEB013',backgroundColor:'#FFF',questionId:62525});
+
+            styleCode();
+
+                StackExchange.realtime.subscribeToQuestion('3', '62525');
+            
+                    });
+    </script>
+
+
+    <script>
+        StackExchange.ready(function () {
+            StackExchange.realtime.init('wss://qa.sockets.stackexchange.com,ws://qa.sockets.stackexchange.com');
+            StackExchange.realtime.subscribeToInboxNotifications();
+                    StackExchange.realtime.subscribeToReputationNotifications('3');
+                StackExchange.realtime.subscribeToTopBarNotifications('3');
+        });
+    </script>
+    <script>
+        StackExchange.init({"locale":"en","stackAuthUrl":"https://stackauth.com","serverTime":1415634815,"networkMetaHostname":"meta.stackexchange.com","routeName":"Questions/Show","styleCode":true,"enableUserHovercards":true,"snippets":{"enabled":false,"domain":"stacksnippets.net"},"site":{"name":"Super User","description":"Q&A for computer enthusiasts and power users","isNoticesTabEnabled":true,"recaptchaPublicKey":"6LcDNwYAAAAAAG_X1rC8kTtLBP6XS2Ym1N0n9kSY","recaptchaAudioLang":"en","enableNewTagCreationWarning":true,"enableSocialMediaInSharePopup":true},"timingsGuid":"b9f3d388-e6b9-4b59-8130-37343204852d","timingsInfo":"Zhvoij506ag7gTi3ATBl94Khw0LuttbGWGJTPOOy89dW1RhR8XxMGXP7sXaqUTTcR1g9jX1hLWAPk15paczSBce1LuBBIkvlEUvu5anLKpISBsv9tjFtwCBOGyBIYfT87Lx6d/rypYsLfaKmBRihtfMxKutMZcDnviCo3rebJ4E+B1DCpgbPVFYngCzQknMJ3rH6VjlGmXWxl2xX8EXWH8NHbw4XQiB9kwektVtYYpmLyPnfR9jX9WLNePAP3RYw","user":{"fkey":"888d3a72182d6ae5137cfd1a020c1f56","isAnonymous":true,"ab":{"tutorial_tooltips":{"v":"b","g":1}}}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.en.js":"a1ab00ffb113","js/moderator.en.js":"3bf88d4bfb80","js/full-anon.en.js":"ba40bc4f0c42","js/full.en.js":"b3f650994659","js/wmd.en.js":"49f3cc5412e4","js/third-party/jquery.autocomplete.min.js":"e5f01e97f7c3","js/third-party/jquery.autocomplete.min.en.js":"","js/mobile.en.js":"a3258d148a79","js/help.en.js":"7f73fe585f5f","js/tageditor.en.js":"84750e4a4944","js/tageditornew.en.js":"06badc16a361","js/inline-tag-editing.en.js":"21223186b436","js/revisions.en.js":"507cd4269137","js/review.en.js":"a34923140178","js/tagsuggestions.en.js":"bc2c996faeda","js/post-validation.en.js":"b624eb3c0746","js/explore-qlist.en.js":"4e6f969d97ee","js/events.en.js":"33468104e1d9","js/keyboard-shortcuts.en.js":"f53953b93abf","js/external-editor.en.js":"7bf4d75730d1"});
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(true);
+        });
+    </script>
+    
+        <script>
+            StackExchange.ready(function () {
+                $('#nav-tour').click(function () {
+                    StackExchange.using("gps", function() {
+                        StackExchange.gps.track("aboutpage.click", { aboutclick_location: "headermain" }, true);
+                    });
+                });
+            });
+        </script>
+    
+    
+<script src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/full-anon.js" async=""></script><script src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/post-validation.js" async=""></script><script src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/prettify-full.js" async=""></script><script src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/external-editor.js" async=""></script><script src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/adFeedback.js" type="text/javascript"></script><link href="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/adFeedback.css" rel="stylesheet"><script src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/wmd.js" async=""></script></head>
+<body class="question-page new-topbar" lang="">
+    <noscript><div id="noscript-padding"></div></noscript>
+    <div id="notify-container"></div>
+    <div id="overlay-header"></div>
+    <div id="custom-header"></div>
+
+
+
+
+<div class="topbar">
+    <div class="topbar-wrapper">
+
+        <div class="js-topbar-dialog-corral">
+
+<div class="topbar-dialog siteSwitcher-dialog dno">
+    <div class="header">
+        <h3><a href="http://superuser.com/">current community</a></h3>
+    </div>
+    <div class="modal-content current-site-container">
+        <ul class="current-site">
+                <li>
+                        <div class="related-links">
+            <a href="http://chat.stackexchange.com/" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:6 })">chat</a>
+                    <a href="http://blog.superuser.com/" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:7 })">blog</a>
+            </div>
+
+
+
+
+    <a href="http://superuser.com/" class="current-site-link site-link js-gps-track" data-id="3" data-gps-track="
+        site_switcher.click({ item_type:3 })">
+        <div class="site-icon favicon favicon-superuser" title="Super User"></div>
+        Super User
+    </a>
+
+                </li>
+                <li class="related-site">
+                        <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                    
+
+
+
+    <a href="http://meta.superuser.com/" class="site-link js-gps-track" data-id="77" data-gps-track="
+            site.switch({ target_site:77, item_type:3 }),
+        site_switcher.click({ item_type:4 })">
+        <div class="site-icon favicon favicon-superusermeta" title="Meta Super User"></div>
+        Meta Super User
+    </a>
+
+                </li>
+                    </ul>
+    </div>
+    
+    <div class="header" id="your-communities-header">
+        <h3>
+your communities        </h3>
+            
+    </div>
+    <div class="modal-content" id="your-communities-section">
+            
+            <div class="call-to-login">
+                        <a href="https://superuser.com/users/signup?returnurl=http%3a%2f%2fsuperuser.com%2fquestions%2f62525%2frun-a-batch-file-in-a-completely-hidden-way" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:10 })">Sign up</a>
+                    or
+                    <a href="https://superuser.com/users/login?returnurl=http%3a%2f%2fsuperuser.com%2fquestions%2f62525%2frun-a-batch-file-in-a-completely-hidden-way" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:11 })">log in</a>
+
+                    to customize your list.
+            </div>
+    </div>
+    
+    <div class="header">
+        <h3><a href="http://stackexchange.com/sites">more stack exchange communities</a></h3>
+    </div>
+    <div class="modal-content">
+            <div class="child-content"></div>
+    </div>
+</div>
+        </div>
+
+        <div class="network-items">
+
+            <a href="http://stackexchange.com/" class="topbar-icon icon-site-switcher yes-hover js-site-switcher-button js-gps-track" data-gps-track="site_switcher.show" title="A list of all 130 Stack Exchange sites">
+                <span class="hidden-text">Stack Exchange</span>
+            </a>
+
+        </div>
+
+        <div class="topbar-links">
+
+                <div class="links-container">
+                    <span class="topbar-menu-links">
+                            <a href="https://superuser.com/users/signup?returnurl=http%3a%2f%2fsuperuser.com%2fquestions%2f62525%2frun-a-batch-file-in-a-completely-hidden-way" class="login-link">sign up</a>
+                            <a href="https://superuser.com/users/login?returnurl=http%3a%2f%2fsuperuser.com%2fquestions%2f62525%2frun-a-batch-file-in-a-completely-hidden-way" class="login-link">log in</a>
+                            <a href="http://superuser.com/tour">tour</a>
+
+                            <a href="#" class="icon-help js-help-button" title="Help Center and other resources">
+        help
+        <span class="triangle"></span>
+    </a>
+    <div class="topbar-dialog help-dialog js-help-dialog dno">
+        <div class="modal-content">
+            <ul>
+                                    <li>
+                        <a href="http://superuser.com/tour" class="js-gps-track" data-gps-track="help_popup.click({ item_type:1 })">
+                            Tour
+                            <span class="item-summary">
+                                Start here for a quick overview of the site
+                            </span>
+                        </a>
+                    </li>
+                <li>
+                    <a href="http://superuser.com/help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:4 })">
+                        Help Center
+                        <span class="item-summary">
+                            Detailed answers to any questions you might have
+                        </span>
+                    </a>
+                </li>
+                    <li>
+                        <a href="http://meta.superuser.com/" class="js-gps-track" data-gps-track="help_popup.click({ item_type:2 })">
+                            Meta
+                            <span class="item-summary">
+                                Discuss the workings and policies of this site
+                            </span>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+
+                    </span>
+                </div>
+
+            <div class="search-container">
+                <form id="search" action="/search" method="get" autocomplete="off">
+                    <input name="q" placeholder="search" tabindex="1" autocomplete="off" maxlength="240" type="text">
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <script>
+        StackExchange.ready(function() { StackExchange.topbar.init(); });
+    </script>
+
+    <div class="container">
+        <div id="header" class="headeranon">
+            <br class="cbt">
+            <div id="hlogo">
+                <a href="http://superuser.com/">
+                    Super User
+                </a>
+            </div>
+            <div id="hmenus">
+                <div class="nav mainnavs mainnavsanon">
+                    <ul>
+                        <li class="youarehere"><a id="nav-questions" href="http://superuser.com/questions">Questions</a></li>
+                        <li><a id="nav-tags" href="http://superuser.com/tags">Tags</a></li>
+                        <li><a id="nav-users" href="http://superuser.com/users">Users</a></li>
+                        <li><a id="nav-badges" href="http://superuser.com/help/badges">Badges</a></li>
+                        <li><a id="nav-unanswered" href="http://superuser.com/unanswered">Unanswered</a></li>
+                    </ul>
+                </div>
+                <div class="nav askquestion">
+                    <ul>
+                        <li>
+                            <a id="nav-askquestion" href="http://superuser.com/questions/ask">Ask Question</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <div id="content">
+            
+
+<div itemscope="" itemtype="http://schema.org/Question">
+	<link itemprop="image" href="http://cdn.sstatic.net/superuser/img/apple-touch-icon.png">
+			<!--googleoff: all-->
+
+<div id="herobox-mini">
+    <div id="hero-content">
+        <span id="controls">
+            <a href="http://superuser.com/tour" id="tell-me-more" class="button">Take the 2-minute tour</a>
+            <span id="close"><a title="click to dismiss">×</a></span>
+        </span>
+        <div id="blurb">
+            Super User is a question and answer site for computer 
+enthusiasts and power users. It's 100% free, no registration required.
+        </div>        
+    </div>
+    <script>
+        $('#tell-me-more').click(function () {
+            var clickSource = $("body").attr("class") + '-mini';
+            if ($("body").hasClass("questions-page")) {
+                clickSource = 'questionpagemini';
+            } else if ($("body").hasClass("question-page")) {
+                clickSource = 'questionpagemini';
+            } else if ($("body").hasClass("home-page")) {
+                clickSource = 'homepagemini';
+            }
+
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("aboutpage.click", { aboutclick_location: clickSource } , true);
+            });
+        });
+        $('#herobox-mini #close').click(function () {
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("hero.action", { hero_action_type: "close" }, true);
+            });
+            $.cookie("hero", "none", { path: "/", expires: 365 });
+            var $hero = $("#herobox-mini");
+            $hero.slideUp('fast', function () { $hero.remove(); });
+            return false;
+        });
+    </script>
+</div>
+			<!--googleon: all-->
+			<div id="question-header">
+			<h1 itemprop="name"><a href="http://superuser.com/questions/62525/run-a-batch-file-in-a-completely-hidden-way" class="question-hyperlink">Run a batch file in a completely hidden way</a></h1>
+		</div>
+			<div id="mainbar">
+
+			
+
+<div class="question" data-questionid="62525" id="question">
+
+    <script>
+                var ados = ados || {};ados.run = ados.run || [];
+                ados.run.push(function() { ados_add_placement(22,8476,"adzerk560093158",4).setZone(46) ; });                    
+            </script>
+            <div class="everyonelovesstackoverflow adzerk-vote" id="adzerk560093158"><a href="http://engine.adzerk.net/r?e=eyJhdiI6NDE0LCJhdCI6NCwiYnQiOjAsImNtIjo4NDEsImNoIjoxMTc4LCJjciI6NTkyMywiZGkiOiIxYzNkYjBiYjc4NTk0MjFkOTZjZTVmYTc4YjYxNjc3NSIsImRtIjoxLCJmYyI6MTAxMzQsImZsIjoyNDIzLCJpcCI6IjI0LjEzNi4xMDAuMTc0Iiwia3ciOiJ3aW5kb3dzLGNvbW1hbmQtbGluZSxiYXRjaCIsIm53IjoyMiwicGMiOjAsInByIjoxNTY4LCJydCI6MSwicmYiOiJodHRwOi8vd3d3Lmdvb2dsZS5jb20vdXJsP3NhPXQmcmN0PWomcT0mZXNyYz1zJnNvdXJjZT13ZWImY2Q9NyZ2ZWQ9MENFd1FGakFHJnVybD1odHRwOi8vc3VwZXJ1c2VyLmNvbS9xdWVzdGlvbnMvNjI1MjUvcnVuLWEtYmF0Y2gtZmlsZS1pbi1hLWNvbXBsZXRlbHktaGlkZGVuLXdheSZlaT1iZDlnVktTdUlJMkJ5Z1RXa0lDQUFnJnVzZz1BRlFqQ05HWk5sZ3d1QmZtVWNXbkZzMm1TOXcyU3pQcFNRJnNpZzI9LVNFT3Z2NTdTWm9XM2RNS0NBcXd5ZyZidm09YnYuNzkxODkwMDYsZC5hV3cmY2FkPXJqYSIsInN0Ijo4NDc2LCJ1ayI6InVlMS1mMDU1NzNjMjFmMWM0ZGQ5ODI3ODczNWNiYmRjMTIxNiIsInpuIjo0NiwidHMiOjE0MTU2MzQ4MTU4OTksInVyIjoiaHR0cDovL2NhcmVlcnMuc3RhY2tvdmVyZmxvdy5jb20_dXRtX3NvdXJjZT1zdGFja2V4Y2hhbmdlLmNvbSZ1dG1fbWVkaXVtPWFkJnV0bV9jYW1wYWlnbj1ob3VzZS1hZHMtY2F0Y2gtYWxsLWFsbC1zaXRlcyZ1dG1fY29udGVudD1sYi1wZGYifQ&amp;s=D3F6dhCGfu8reyY-tZxJH5cvFS0" rel="nofollow" target="_blank" title=""><img src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/46a9844d6e504212a85bc72ddd7dd829.png" title="" alt="" height="90" width="728" border="0"></a><div class="adzerk-vote-controls" style="display: none;"><div class="adzerk-vote-option adzerk-vote-up"><div class="adzerk-vote-icon"></div></div><div class="adzerk-vote-option adzerk-vote-down"><div class="adzerk-vote-icon"></div></div></div><div class="adzerk-vote-survey" style="display:none;"><form><span>No problem. We won't show you that ad again. Why didn't you like it?</span><ul><li><label><input value="12" name="downvoteReason" type="radio">Uninteresting</label></li><li><label><input value="13" name="downvoteReason" type="radio">Misleading</label></li><li><label><input value="14" name="downvoteReason" type="radio">Offensive</label></li><li><label><input value="15" name="downvoteReason" type="radio">Repetitive</label></li></ul><a href="#" class="adzerk-vote-cancel">Oops! I didn't mean to do this.</a></form></div><img src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/i_003.gif" style="position:absolute;" height="0px" width="0px" border="0"></div>    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input name="_id_" value="62525" type="hidden">
+    <a class="vote-up-off" title="This question shows research effort; it is useful and clear">up vote</a>
+    <span itemprop="upvoteCount" class="vote-count-post ">31</span>
+    <a class="vote-down-off" title="This question does not show any research effort; it is unclear or not useful">down vote</a>
+    
+    <a class="star-off" href="#" title="This is a favorite question (click again to undo)">favorite</a>
+    <div class="favoritecount"><b>19</b></div>   
+
+</div>
+
+            </td>
+            
+<td class="postcell">
+<div>
+    <div class="post-text" itemprop="text">
+
+        <p>I'm looking for some way to run a batch file (.bat) without anything visible to the user (no window, no taskbar name, .etc..).</p>
+
+<p>I don't want to use some program to do that, I'm looking for something cleaner. I've found <a href="http://www.computing.net/answers/dos/run-batch-file-invisiblestealth/14270.html">a solution</a> that uses VBScript, but I don't really like using VBS, either.</p>
+
+    </div>
+    <div class="post-taglist">
+        <a href="http://superuser.com/questions/tagged/windows" class="post-tag js-gps-track" title="show questions tagged 'windows'" rel="tag">windows</a> <a href="http://superuser.com/questions/tagged/command-line" class="post-tag js-gps-track" title="show questions tagged 'command-line'" rel="tag">command-line</a> <a href="http://superuser.com/questions/tagged/batch" class="post-tag js-gps-track" title="show questions tagged 'batch'" rel="tag">batch</a> 
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://superuser.com/q/62525" title="short permalink to this question" class="short-link" id="link-post-62525">share</a><span class="lsep">|</span><a href="http://superuser.com/posts/62525/edit" class="suggest-edit-post" title="">improve this question</a></div>        
+    </td>
+    <td class="post-signature" align="right">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://superuser.com/posts/62525/revisions" title="show all edits to this post">edited <span title="2014-08-16 00:39:36Z" class="relativetime">Aug 16 at 0:39</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://superuser.com/users/67682/dbza"><div class="gravatar-wrapper-32"><img src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/IRE8T.png" alt="" height="32" width="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://superuser.com/users/67682/dbza">dbza</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">412</span><span title="3 silver badges"><span class="badge2"></span><span class="badgecount">3</span></span><span title="13 bronze badges"><span class="badge3"></span><span class="badgecount">13</span></span>
+    </div>
+</div>    </td>
+    <td class="post-signature owner">
+        <div class="user-info user-hover">
+    <div class="user-action-time">
+        asked <span title="2009-10-29 12:42:48Z" class="relativetime">Oct 29 '09 at 12:42</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://superuser.com/users/1799/moayad-mardini"><div class="gravatar-wrapper-32"><img src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/ww9hn.png" alt="" height="32" width="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://superuser.com/users/1799/moayad-mardini">Moayad Mardini</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">1,089</span><span title="3 gold badges"><span class="badge1"></span><span class="badgecount">3</span></span><span title="16 silver badges"><span class="badge2"></span><span class="badgecount">16</span></span><span title="22 bronze badges"><span class="badge3"></span><span class="badgecount">22</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+</td>
+        </tr>
+                
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-62525" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="3" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-64765" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of 'useful comment' votes received" class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Windows services don't run as
+ batch files.  They run as services.  You need to clarify the 
+question--as written and with comments it makes no sense to me.</span>
+                –&nbsp;
+                    <a href="http://superuser.com/users/11550/carlf" title="7793 reputation" class="comment-user">CarlF</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="#comment64765_62525"><span title="2009-10-29 14:03:16Z" class="relativetime-clean">Oct 29 '09 at 14:03</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-64890" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of 'useful comment' votes received" class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">I has a Windows service that runs batch files. Not that the service is a batch file.</span>
+                –&nbsp;
+                    <a href="http://superuser.com/users/1799/moayad-mardini" title="1089 reputation" class="comment-user owner">Moayad Mardini</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="#comment64890_62525"><span title="2009-10-29 18:37:23Z" class="relativetime-clean">Oct 29 '09 at 18:37</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-65112" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of 'useful comment' votes received" class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">What language are you writing your service in?</span>
+                –&nbsp;
+                    <a href="http://superuser.com/users/13522/hugh-allen" title="5681 reputation" class="comment-user">Hugh Allen</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="#comment65112_62525"><span title="2009-10-30 05:53:25Z" class="relativetime-clean">Oct 30 '09 at 5:53</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+            <div id="comments-link-62525" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link  dno" title="Use comments to ask for more information or suggest improvements. Avoid answering questions in comments."></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span><a class="js-show-link comments-link " title="expand to show all comments on this post, or add one of your own" href="#" onclick="">show <b>3</b> more comments</a>
+            </div>
+    </td>
+</tr>        </tbody></table>
+</div>
+
+			<div id="answers">
+
+				<a name="tab-top"></a>
+				<div id="answers-header">
+					<div class="subheader answers-subheader">
+						<h2>
+								16 Answers
+                                <span style="display:none;" itemprop="answerCount">16</span>
+						</h2>
+						<div>
+							<div id="tabs">
+        <a href="http://superuser.com/questions/62525/run-a-batch-file-in-a-completely-hidden-way?answertab=active#tab-top" title="Answers with the latest activity first">active</a>
+        <a href="http://superuser.com/questions/62525/run-a-batch-file-in-a-completely-hidden-way?answertab=oldest#tab-top" title="Answers in the order they were provided">oldest</a>
+        <a class="youarehere" href="http://superuser.com/questions/62525/run-a-batch-file-in-a-completely-hidden-way?answertab=votes#tab-top" title="Answers with the highest score first">votes</a>
+</div>
+						</div>
+					</div>    
+				</div>    
+
+
+
+
+  
+<a name="62646"></a>
+<div id="answer-62646" class="answer accepted-answer" data-answerid="62646" itemscope="" itemtype="http://schema.org/Answer" itemprop="acceptedAnswer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input name="_id_" value="62646" type="hidden">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span itemprop="upvoteCount" class="vote-count-post ">31</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+        <span class="vote-accepted-on load-accepted-answer-date" title="loading when this answer was accepted...">accepted</span>
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p><strong>Solution 1:</strong>  </p>
+
+<p>Save this one line of text as file <code>invisible.vbs</code>:</p>
+
+<blockquote>
+  <p>CreateObject("Wscript.Shell").Run """"
+  &amp; WScript.Arguments(0) &amp; """", 0,
+  False</p>
+</blockquote>
+
+<p>To run any program or batch file invisibly, use it like this:</p>
+
+<blockquote>
+  <p>wscript.exe
+  "C:\Wherever\invisible.vbs" "C:\Some
+  Other Place\MyBatchFile.bat"</p>
+</blockquote>
+
+<p>To also be able to pass-on/relay a list of arguments use only two double quotes</p>
+
+<blockquote>
+  <p>CreateObject("Wscript.Shell").Run ""
+  &amp; WScript.Arguments(0) &amp; "", 0,
+  False</p>
+</blockquote>
+
+<p>Example: <code>Invisible.vbs "Kill.vbs ME.exe"</code></p>
+
+<p><strong>Solution 2:</strong></p>
+
+<p>Use a command line tool to silently launch a process : <a href="http://www.joeware.net/freetools/tools/quiet/index.htm">Quiet</a>, <a href="http://code.kliu.org/misc/hidecon/">hidecon</a> or <a href="http://code.kliu.org/misc/hideexec/">hideexec</a>.</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://superuser.com/a/62646" title="short permalink to this answer" class="short-link" id="link-post-62646">share</a><span class="lsep">|</span><a href="http://superuser.com/posts/62646/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td class="post-signature" align="right">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://superuser.com/posts/62646/revisions" title="show all edits to this post">edited <span title="2013-09-01 03:48:55Z" class="relativetime">Sep 1 '13 at 3:48</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://superuser.com/users/238468/vlastimil-ov%c4%8d%c3%a1%c4%8d%c3%adk"><div class="gravatar-wrapper-32"><img src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/52874e9b4f06834f233ea323925fd305.png" alt="" height="32" width="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://superuser.com/users/238468/vlastimil-ov%c4%8d%c3%a1%c4%8d%c3%adk">Vlastimil Ovčáčík</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">512</span><span title="1 silver badge"><span class="badge2"></span><span class="badgecount">1</span></span><span title="11 bronze badges"><span class="badge3"></span><span class="badgecount">11</span></span>
+    </div>
+</div>    </td>
+            
+
+
+    <td class="post-signature" align="right">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2009-10-29 16:29:10Z" class="relativetime">Oct 29 '09 at 16:29</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://superuser.com/users/8672/harrymc"><div class="gravatar-wrapper-32"><img src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/b3c3cc9d0a22cc230ed8a603cf9aeb6f.png" alt="" height="32" width="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://superuser.com/users/8672/harrymc">harrymc</a><br>
+        <span class="reputation-score" title="reputation score 147140" dir="ltr">147k</span><span title="6 gold badges"><span class="badge1"></span><span class="badgecount">6</span></span><span title="102 silver badges"><span class="badge2"></span><span class="badgecount">102</span></span><span title="271 bronze badges"><span class="badge3"></span><span class="badgecount">271</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-62646" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="4" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-626196" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of 'useful comment' votes received" class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@Starx VB syntax. <code>&amp;</code> means concatenate strings. Strings are enclosed in double quotes (<code>"</code>). Consecutive double quotes (<code>""</code>) inside string delimiters means a literal double quote (<code>"</code>). So, four double quotes (<code>""""</code>) would be a string literal of one character, a double quote (<code>"</code>). Put it together, and <code>"""" &amp; WScript.Arguments(0) &amp; """"</code> would become <code>"&lt;argument&gt;"</code>, where <code>&lt;argument&gt;</code> is the first command line argument passed to the script.</span>
+                –&nbsp;
+                    <a href="http://superuser.com/users/117590/bob" title="21078 reputation" class="comment-user">Bob</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="#comment626196_62646"><span title="2012-12-17 17:39:34Z" class="relativetime-clean">Dec 17 '12 at 17:39</span></a></span>
+                    <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+            <div id="comments-link-62646" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link  dno" title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span><a class="js-show-link comments-link " title="expand to show all comments on this post, or add one of your own" href="#" onclick="">show <b>4</b> more comments</a>
+            </div>
+    </td>
+</tr>    </tbody></table>
+</div>
+<script>
+                var ados = ados || {};ados.run = ados.run || [];
+                ados.run.push(function() { ados_add_placement(22,8476,"adzerk1416701064",4).setZone(48) ; });                    
+            </script>
+            <div class="everyonelovesstackoverflow adzerk-vote" id="adzerk1416701064"><a href="http://engine.adzerk.net/r?e=eyJhdiI6NDE0LCJhdCI6NCwiYnQiOjAsImNtIjo4NDEsImNoIjoxMTc4LCJjciI6MTA3NjksImRpIjoiYzc1YzAzNmU3YTg4NDA1NDk4MmNjNjEyMDYyNjIzMmIiLCJkbSI6MSwiZmMiOjE2ODgyLCJmbCI6MjQyMywiaXAiOiIyNC4xMzYuMTAwLjE3NCIsImt3Ijoid2luZG93cyxjb21tYW5kLWxpbmUsYmF0Y2giLCJudyI6MjIsInBjIjowLCJwciI6MTU2OCwicnQiOjEsInJmIjoiaHR0cDovL3d3dy5nb29nbGUuY29tL3VybD9zYT10JnJjdD1qJnE9JmVzcmM9cyZzb3VyY2U9d2ViJmNkPTcmdmVkPTBDRXdRRmpBRyZ1cmw9aHR0cDovL3N1cGVydXNlci5jb20vcXVlc3Rpb25zLzYyNTI1L3J1bi1hLWJhdGNoLWZpbGUtaW4tYS1jb21wbGV0ZWx5LWhpZGRlbi13YXkmZWk9YmQ5Z1ZLU3VJSTJCeWdUV2tJQ0FBZyZ1c2c9QUZRakNOR1pObGd3dUJmbVVjV25GczJtUzl3MlN6UHBTUSZzaWcyPS1TRU92djU3U1pvVzNkTUtDQXF3eWcmYnZtPWJ2Ljc5MTg5MDA2LGQuYVd3JmNhZD1yamEiLCJzdCI6ODQ3NiwidWsiOiJ1ZTEtZjA1NTczYzIxZjFjNGRkOTgyNzg3MzVjYmJkYzEyMTYiLCJ6biI6NDgsInRzIjoxNDE1NjM0ODE1OTAwLCJ1ciI6Imh0dHA6Ly9jYXJlZXJzLnN0YWNrb3ZlcmZsb3cuY29tP3V0bV9zb3VyY2U9c3RhY2tleGNoYW5nZS5jb20mdXRtX21lZGl1bT1hZCZ1dG1fY2FtcGFpZ249aG91c2UtYWRzLWNhdGNoLWFsbC1hbGwtc2l0ZXMmdXRtX2NvbnRlbnQ9bGItbW9yZS1wYXkta2V5In0&amp;s=QF2n9hTF0S5-lTmgLZr_a6OHkKc" rel="nofollow" target="_blank" title=""><img src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/d893babe671c41118c1fece177e0a21a.jpg" title="" alt="" height="90" width="728" border="0"></a><div class="adzerk-vote-controls" style="display: none;"><div class="adzerk-vote-option adzerk-vote-up"><div class="adzerk-vote-icon"></div></div><div class="adzerk-vote-option adzerk-vote-down"><div class="adzerk-vote-icon"></div></div></div><div class="adzerk-vote-survey" style="display:none;"><form><span>No problem. We won't show you that ad again. Why didn't you like it?</span><ul><li><label><input value="12" name="downvoteReason" type="radio">Uninteresting</label></li><li><label><input value="13" name="downvoteReason" type="radio">Misleading</label></li><li><label><input value="14" name="downvoteReason" type="radio">Offensive</label></li><li><label><input value="15" name="downvoteReason" type="radio">Repetitive</label></li></ul><a href="#" class="adzerk-vote-cancel">Oops! I didn't mean to do this.</a></form></div><img src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/i.gif" style="position:absolute;" height="0px" width="0px" border="0"></div>
+  
+<a name="443181"></a>
+<div id="answer-443181" class="answer" data-answerid="443181" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input name="_id_" value="443181" type="hidden">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span itemprop="upvoteCount" class="vote-count-post ">9</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>To Hide batch files or command files or any files.... Use Windows XP 
+built in Iexpress.exe utility to build a .EXE out of the batch file. 
+When using Iexpress make sure you check the run hidden option and check 
+mark all the boxes about not showing anything. After you create your 
+.exe place it in whatever run command folder you choose and you will 
+never see it come up.</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://superuser.com/a/443181" title="short permalink to this answer" class="short-link" id="link-post-443181">share</a><span class="lsep">|</span><a href="http://superuser.com/posts/443181/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td class="post-signature" align="right">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2012-06-29 21:06:44Z" class="relativetime">Jun 29 '12 at 21:06</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://superuser.com/users/143219/paul-cheselske"><div class="gravatar-wrapper-32"><img src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/596ca229509295851c0a7f771e77e9eb.png" alt="" height="32" width="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://superuser.com/users/143219/paul-cheselske">Paul Cheselske</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">99</span><span title="1 silver badge"><span class="badge2"></span><span class="badgecount">1</span></span><span title="1 bronze badge"><span class="badge3"></span><span class="badgecount">1</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-443181" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="1" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+            <div id="comments-link-443181" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link  dno" title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span><a class="js-show-link comments-link " title="expand to show all comments on this post, or add one of your own" href="#" onclick="">show <b>1</b> more comment</a>
+            </div>
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="62529"></a>
+<div id="answer-62529" class="answer" data-answerid="62529" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input name="_id_" value="62529" type="hidden">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span itemprop="upvoteCount" class="vote-count-post ">7</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>use <a href="http://www.commandline.co.uk/cmdow/">Cmdow</a> is a 
+Win32 commandline utility for NT4/2000/XP/2003 that allows windows to be
+ listed, moved, resized, renamed, hidden/unhidden, disabled/enabled, 
+minimized, maximized, restored, activated/inactivated, closed, killed 
+and more.</p>
+
+<p>Run a batch file hidden passing it parameters:-</p>
+
+<blockquote>
+  <p>cmdow /run /hid mybat arg1 "arg 2"</p>
+</blockquote>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://superuser.com/a/62529" title="short permalink to this answer" class="short-link" id="link-post-62529">share</a><span class="lsep">|</span><a href="http://superuser.com/posts/62529/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td class="post-signature" align="right">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2009-10-29 12:48:03Z" class="relativetime">Oct 29 '09 at 12:48</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://superuser.com/users/3630/joe"><div class="gravatar-wrapper-32"><img src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/f00f721800467c14500abdcab87385d4.jpeg" alt="" height="32" width="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://superuser.com/users/3630/joe">joe</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">8,654</span><span title="5 gold badges"><span class="badge1"></span><span class="badgecount">5</span></span><span title="44 silver badges"><span class="badge2"></span><span class="badgecount">44</span></span><span title="90 bronze badges"><span class="badge3"></span><span class="badgecount">90</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-62529" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="2" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-64717" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of 'useful comment' votes received" class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">cmdow is detected as a 
+malware by most antivirus products. Hence it would be difficult to use 
+this solution in places other than you own PC.</span>
+                –&nbsp;
+                    <a href="http://superuser.com/users/4257/ganesh-r" title="3517 reputation" class="comment-user">Ganesh R.</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="#comment64717_62529"><span title="2009-10-29 13:02:20Z" class="relativetime-clean">Oct 29 '09 at 13:02</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+            <div id="comments-link-62529" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link  dno" title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span><a class="js-show-link comments-link " title="expand to show all comments on this post, or add one of your own" href="#" onclick="">show <b>2</b> more comments</a>
+            </div>
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="62531"></a>
+<div id="answer-62531" class="answer" data-answerid="62531" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input name="_id_" value="62531" type="hidden">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span itemprop="upvoteCount" class="vote-count-post ">5</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Run the script via an at job without making it interactive:</p>
+
+<pre><code>at 11:00 script.bat
+</code></pre>
+
+<p></p><hr><p></p>
+
+<p>Another solution, if you don't mind installing something like Python, you could simply create a script and run it with <code>pythonw</code>
+ (the linked version for GUI operations). Since you aren't using any 
+graphical APIs, the window will not show. Simply use calls to <code>os.system()</code> and it will mimic a batch script, as it is the same as typing the strings into the command line.</p>
+
+<p>Example:</p>
+
+<pre><code>import os
+
+os.system("tasklist &gt; C:\tasks.txt")
+os.system("ipconfig /all &gt; C:\netinfo.log")
+</code></pre>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://superuser.com/a/62531" title="short permalink to this answer" class="short-link" id="link-post-62531">share</a><span class="lsep">|</span><a href="http://superuser.com/posts/62531/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td class="post-signature" align="right">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://superuser.com/posts/62531/revisions" title="show all edits to this post">edited <span title="2009-10-29 14:56:03Z" class="relativetime">Oct 29 '09 at 14:56</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        <br>
+        
+    </div>
+</div>    </td>
+            
+
+
+    <td class="post-signature" align="right">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2009-10-29 12:49:03Z" class="relativetime">Oct 29 '09 at 12:49</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://superuser.com/users/1931/john-t"><div class="gravatar-wrapper-32"><img src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/04bfb2242487f90e19dc56f2fb4b9e93.jpeg" alt="" height="32" width="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://superuser.com/users/1931/john-t">John T</a><br>
+        <span class="reputation-score" title="reputation score 107292" dir="ltr">107k</span><span title="11 gold badges"><span class="badge1"></span><span class="badgecount">11</span></span><span title="205 silver badges"><span class="badge2"></span><span class="badgecount">205</span></span><span title="253 bronze badges"><span class="badge3"></span><span class="badgecount">253</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-62531" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="2" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-64732" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of 'useful comment' votes received" class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">But how would I run this command?</span>
+                –&nbsp;
+                    <a href="http://superuser.com/users/1799/moayad-mardini" title="1089 reputation" class="comment-user owner">Moayad Mardini</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="#comment64732_62531"><span title="2009-10-29 13:07:18Z" class="relativetime-clean">Oct 29 '09 at 13:07</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+            <div id="comments-link-62531" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link  dno" title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span><a class="js-show-link comments-link " title="expand to show all comments on this post, or add one of your own" href="#" onclick="">show <b>2</b> more comments</a>
+            </div>
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="238199"></a>
+<div id="answer-238199" class="answer" data-answerid="238199" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input name="_id_" value="238199" type="hidden">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span itemprop="upvoteCount" class="vote-count-post ">5</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Seems that somebody made a list of the 7-8 ways to run 'silent':</p>
+
+<blockquote>
+  <p><a href="http://forums.techguy.org/dos-other/644932-solved-howto-run-batch-file.html" rel="nofollow">http://forums.techguy.org/dos-other/644932-solved-howto-run-batch-file.html</a></p>
+</blockquote>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://superuser.com/a/238199" title="short permalink to this answer" class="short-link" id="link-post-238199">share</a><span class="lsep">|</span><a href="http://superuser.com/posts/238199/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td class="post-signature" align="right">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://superuser.com/posts/238199/revisions" title="show all edits to this post">edited <span title="2011-07-02 05:19:44Z" class="relativetime">Jul 2 '11 at 5:19</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://superuser.com/users/73637/8088"><div class="gravatar-wrapper-32"><img src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/rLaSo.jpg" alt="" height="32" width="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://superuser.com/users/73637/8088">8088</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">8,483</span><span title="9 gold badges"><span class="badge1"></span><span class="badgecount">9</span></span><span title="30 silver badges"><span class="badge2"></span><span class="badgecount">30</span></span><span title="51 bronze badges"><span class="badge3"></span><span class="badgecount">51</span></span>
+    </div>
+</div>    </td>
+            
+
+
+    <td class="post-signature" align="right">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2011-01-26 19:38:48Z" class="relativetime">Jan 26 '11 at 19:38</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://superuser.com/users/6229/rolnik"><div class="gravatar-wrapper-32"><img src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/3da37ca89dcd504301f385872e82e915.png" alt="" height="32" width="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://superuser.com/users/6229/rolnik">Rolnik</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">1,136</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="10 silver badges"><span class="badge2"></span><span class="badgecount">10</span></span><span title="23 bronze badges"><span class="badge3"></span><span class="badgecount">23</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-238199" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+            <div id="comments-link-238199" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span><a class="js-show-link comments-link dno" title="expand to show all comments on this post, or add one of your own" href="#" onclick=""></a>
+            </div>
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="62628"></a>
+<div id="answer-62628" class="answer" data-answerid="62628" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input name="_id_" value="62628" type="hidden">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span itemprop="upvoteCount" class="vote-count-post ">2</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>You can run it minimized easily.</p>
+
+<pre><code>start /MIN batch.cmd
+</code></pre>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://superuser.com/a/62628" title="short permalink to this answer" class="short-link" id="link-post-62628">share</a><span class="lsep">|</span><a href="http://superuser.com/posts/62628/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td class="post-signature" align="right">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2009-10-29 15:54:30Z" class="relativetime">Oct 29 '09 at 15:54</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://superuser.com/users/1508/brad-gilbert"><div class="gravatar-wrapper-32"><img src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/ff125815c9ab98b7829fe5688d76a65d.png" alt="" height="32" width="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://superuser.com/users/1508/brad-gilbert">Brad Gilbert</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">673</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="6 silver badges"><span class="badge2"></span><span class="badgecount">6</span></span><span title="15 bronze badges"><span class="badge3"></span><span class="badgecount">15</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-62628" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+            <div id="comments-link-62628" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span><a class="js-show-link comments-link dno" title="expand to show all comments on this post, or add one of your own" href="#" onclick=""></a>
+            </div>
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="533370"></a>
+<div id="answer-533370" class="answer" data-answerid="533370" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input name="_id_" value="533370" type="hidden">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span itemprop="upvoteCount" class="vote-count-post ">2</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>If your Batch File can fit into one line and so many characters, then
+ just use a Shortcut by right clicking inside a  folder put in a random 
+directory, and skip through the rest of the wizard, and lastly right 
+click on the shortcut just created and click properties and under 
+target, input what you would usually put in a bat file. And Bobs your 
+uncle!</p>
+
+<p>Pros:</p>
+
+<pre><code> No Command Window
+ Ability to use an icon
+ Same Functionality of bat file
+</code></pre>
+
+<p>Cons:</p>
+
+<pre><code> Limited to one line, so many characters
+</code></pre>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://superuser.com/a/533370" title="short permalink to this answer" class="short-link" id="link-post-533370">share</a><span class="lsep">|</span><a href="http://superuser.com/posts/533370/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td class="post-signature" align="right">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2013-01-13 03:36:21Z" class="relativetime">Jan 13 '13 at 3:36</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://superuser.com/users/187565/jack-s"><div class="gravatar-wrapper-32"><img src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/picture.jpeg" alt="" height="32" width="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://superuser.com/users/187565/jack-s">Jack S</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">21</span><span title="1 bronze badge"><span class="badge3"></span><span class="badgecount">1</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-533370" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="2" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+            <div id="comments-link-533370" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link  dno" title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span><a class="js-show-link comments-link " title="expand to show all comments on this post, or add one of your own" href="#" onclick="">show <b>2</b> more comments</a>
+            </div>
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="305340"></a>
+<div id="answer-305340" class="answer" data-answerid="305340" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input name="_id_" value="305340" type="hidden">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span itemprop="upvoteCount" class="vote-count-post ">1</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>You do not need to do any special.</p>
+
+<p>If you are running the batch files from a windows service, they 
+should be hidden by default unless you enable the "Allow service to 
+interact with desktop" option on the service.</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://superuser.com/a/305340" title="short permalink to this answer" class="short-link" id="link-post-305340">share</a><span class="lsep">|</span><a href="http://superuser.com/posts/305340/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td class="post-signature" align="right">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2011-07-02 09:04:44Z" class="relativetime">Jul 2 '11 at 9:04</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://superuser.com/users/3707/sgmoore"><div class="gravatar-wrapper-32"><img src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/779643d33a595f5736dbd5a93d188cfe.png" alt="" height="32" width="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://superuser.com/users/3707/sgmoore">sgmoore</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">4,531</span><span title="12 silver badges"><span class="badge2"></span><span class="badgecount">12</span></span><span title="21 bronze badges"><span class="badge3"></span><span class="badgecount">21</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-305340" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+            <div id="comments-link-305340" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span><a class="js-show-link comments-link dno" title="expand to show all comments on this post, or add one of your own" href="#" onclick=""></a>
+            </div>
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="531667"></a>
+<div id="answer-531667" class="answer" data-answerid="531667" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input name="_id_" value="531667" type="hidden">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span itemprop="upvoteCount" class="vote-count-post ">1</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Using Windows7, you can use the "Scheduled Task" control panel to 
+schedule a batch file to run in the background invisibly with specified 
+permissions and even as the "SYSTEM" account.  See screenshot below:</p>
+
+<p><img src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/KnTQA.png" alt="enter image description here"> </p>
+
+<p>Furthermore, although with not as many capabilities, you can also 
+create a invisible batch script task like this from the command line 
+using the "AT.exe" command without the '/interactive' option.</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://superuser.com/a/531667" title="short permalink to this answer" class="short-link" id="link-post-531667">share</a><span class="lsep">|</span><a href="http://superuser.com/posts/531667/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td class="post-signature" align="right">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2013-01-09 20:57:35Z" class="relativetime">Jan 9 '13 at 20:57</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://superuser.com/users/9571/djangofan"><div class="gravatar-wrapper-32"><img src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/f2tOS.jpg" alt="" height="32" width="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://superuser.com/users/9571/djangofan">djangofan</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">1,059</span><span title="4 gold badges"><span class="badge1"></span><span class="badgecount">4</span></span><span title="15 silver badges"><span class="badge2"></span><span class="badgecount">15</span></span><span title="26 bronze badges"><span class="badge3"></span><span class="badgecount">26</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-531667" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+            <div id="comments-link-531667" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span><a class="js-show-link comments-link dno" title="expand to show all comments on this post, or add one of your own" href="#" onclick=""></a>
+            </div>
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="752402"></a>
+<div id="answer-752402" class="answer" data-answerid="752402" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input name="_id_" value="752402" type="hidden">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span itemprop="upvoteCount" class="vote-count-post ">1</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>I don't like VBScript solution.</p>
+
+<p>Download and copy <a href="http://www.nirsoft.net/utils/nircmd.html" rel="nofollow">nircmd.exe</a> to your <code>%systemroot%\system32</code> folder, then add this command to first line of your batch:</p>
+
+<pre><code>nircmd.exe win hide ititle "cmd.exe"
+</code></pre>
+
+<p>or make your batch title custom first with <code>title</code> command to avoid from hiding all <code>cmd</code> windows, like this:</p>
+
+<pre><code>title MyBatch
+nircmd.exe win hide ititle "MyBatch"
+</code></pre>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://superuser.com/a/752402" title="short permalink to this answer" class="short-link" id="link-post-752402">share</a><span class="lsep">|</span><a href="http://superuser.com/posts/752402/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td class="post-signature" align="right">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://superuser.com/posts/752402/revisions" title="show all edits to this post">edited <span title="2014-05-13 09:47:11Z" class="relativetime">May 13 at 9:47</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        <br>
+        
+    </div>
+</div>    </td>
+            
+
+
+    <td class="post-signature" align="right">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2014-05-12 08:25:28Z" class="relativetime">May 12 at 8:25</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://superuser.com/users/322178/bijan-r"><div class="gravatar-wrapper-32"><img src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/a0dda7014d7533376cea64846953729c.jpeg" alt="" height="32" width="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://superuser.com/users/322178/bijan-r">BijaN-R</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">11</span><span title="2 bronze badges"><span class="badge3"></span><span class="badgecount">2</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-752402" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+            <div id="comments-link-752402" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span><a class="js-show-link comments-link dno" title="expand to show all comments on this post, or add one of your own" href="#" onclick=""></a>
+            </div>
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="152280"></a>
+<div id="answer-152280" class="answer" data-answerid="152280" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input name="_id_" value="152280" type="hidden">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span itemprop="upvoteCount" class="vote-count-post ">0</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<pre><code>cmdow /run /hid "file.extention" arg1 "arg 2"
+</code></pre>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://superuser.com/a/152280" title="short permalink to this answer" class="short-link" id="link-post-152280">share</a><span class="lsep">|</span><a href="http://superuser.com/posts/152280/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td class="post-signature" align="right">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="http://superuser.com/posts/152280/revisions" title="show all edits to this post">edited <span title="2011-01-26 20:06:54Z" class="relativetime">Jan 26 '11 at 20:06</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://superuser.com/users/34844/bloodphilia"><div class="gravatar-wrapper-32"><img src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/547cca3ba65b2c5c96973e69c67de2ef.png" alt="" height="32" width="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://superuser.com/users/34844/bloodphilia">BloodPhilia</a><br>
+        <span class="reputation-score" title="reputation score 18656" dir="ltr">18.7k</span><span title="5 gold badges"><span class="badge1"></span><span class="badgecount">5</span></span><span title="51 silver badges"><span class="badge2"></span><span class="badgecount">51</span></span><span title="83 bronze badges"><span class="badge3"></span><span class="badgecount">83</span></span>
+    </div>
+</div>    </td>
+            
+
+
+    <td class="post-signature" align="right">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2010-06-14 14:11:34Z" class="relativetime">Jun 14 '10 at 14:11</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://superuser.com/users/39975/malak"><div class="gravatar-wrapper-32"><img src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/0f4d21854c38528a9e2ebc309c6a5800.png" alt="" height="32" width="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://superuser.com/users/39975/malak">malak</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">11</span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-152280" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="1" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-244844" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of 'useful comment' votes received" class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Please include brief 
+explanation of the command. That might help the OP (and others) 
+understand how it works instead of just copying the command and using 
+it.</span>
+                –&nbsp;
+                    <a href="http://superuser.com/users/34844/bloodphilia" title="18656 reputation" class="comment-user">BloodPhilia</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="#comment244844_152280"><span title="2011-01-26 20:07:43Z" class="relativetime-clean">Jan 26 '11 at 20:07</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+            <div id="comments-link-152280" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link  dno" title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span><a class="js-show-link comments-link " title="expand to show all comments on this post, or add one of your own" href="#" onclick="">show <b>1</b> more comment</a>
+            </div>
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="486724"></a>
+<div id="answer-486724" class="answer" data-answerid="486724" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input name="_id_" value="486724" type="hidden">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span itemprop="upvoteCount" class="vote-count-post ">0</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>I'm experimenting with SCHTASKS. The idea is that if schedule a task 
+as SYSTEM user the process will be started as hidden.And if you delete a
+ scheduled task the process will be not stopped.Here's more info :  <a href="http://ss64.org/viewtopic.php?id=1539" rel="nofollow">http://ss64.org/viewtopic.php?id=1539</a></p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://superuser.com/a/486724" title="short permalink to this answer" class="short-link" id="link-post-486724">share</a><span class="lsep">|</span><a href="http://superuser.com/posts/486724/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td class="post-signature" align="right">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2012-10-12 07:16:50Z" class="relativetime">Oct 12 '12 at 7:16</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://superuser.com/users/62798/npocmaka"><div class="gravatar-wrapper-32"><img src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/71c16572250a9364f36b907d34ab4a63.jpeg" alt="" height="32" width="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://superuser.com/users/62798/npocmaka">npocmaka</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">307</span><span title="2 silver badges"><span class="badge2"></span><span class="badgecount">2</span></span><span title="6 bronze badges"><span class="badge3"></span><span class="badgecount">6</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-486724" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+            <div id="comments-link-486724" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span><a class="js-show-link comments-link dno" title="expand to show all comments on this post, or add one of your own" href="#" onclick=""></a>
+            </div>
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="605092"></a>
+<div id="answer-605092" class="answer" data-answerid="605092" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input name="_id_" value="605092" type="hidden">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span itemprop="upvoteCount" class="vote-count-post ">0</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>I had the same problem, but figured it out:<br>
+<code>
+Shell("filehere" &amp; "parametersforbatchfilehere", vbHidden)
+</code></p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://superuser.com/a/605092" title="short permalink to this answer" class="short-link" id="link-post-605092">share</a><span class="lsep">|</span><a href="http://superuser.com/posts/605092/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td class="post-signature" align="right">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2013-06-07 20:50:58Z" class="relativetime">Jun 7 '13 at 20:50</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://superuser.com/users/229837/alan-panayotov"><div class="gravatar-wrapper-32"><img src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/a1c42ff40946d2d72ca339f023f334c6.png" alt="" height="32" width="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://superuser.com/users/229837/alan-panayotov">Alan Panayotov</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">1</span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-605092" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+            <div id="comments-link-605092" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span><a class="js-show-link comments-link dno" title="expand to show all comments on this post, or add one of your own" href="#" onclick=""></a>
+            </div>
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="797667"></a>
+<div id="answer-797667" class="answer" data-answerid="797667" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input name="_id_" value="797667" type="hidden">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span itemprop="upvoteCount" class="vote-count-post ">0</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>This works for windows 8 (possibly others)</p>
+
+<ol>
+<li>Create a batch file as normal</li>
+<li>Create a shortcut to the batch file</li>
+<li>Right click on the shortcut &gt; properties</li>
+<li>Click Layout</li>
+<li>Untick "Let system position window"</li>
+<li>set left position tp -1000</li>
+<li><p>click apply</p></li>
+<li><p>Click on the shortcut and it will run but you wont see it :)</p></li>
+</ol>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://superuser.com/a/797667" title="short permalink to this answer" class="short-link" id="link-post-797667">share</a><span class="lsep">|</span><a href="http://superuser.com/posts/797667/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td class="post-signature" align="right">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2014-08-15 23:36:30Z" class="relativetime">Aug 15 at 23:36</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://superuser.com/users/357342/andrew"><div class="gravatar-wrapper-32"><img src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/e550476f3f79cc822d7d6b903beb2655.png" alt="" height="32" width="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://superuser.com/users/357342/andrew">Andrew</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">1</span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-797667" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="1" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+            <div id="comments-link-797667" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link  dno" title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span><a class="js-show-link comments-link " title="expand to show all comments on this post, or add one of your own" href="#" onclick="">show <b>1</b> more comment</a>
+            </div>
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="520540"></a>
+<div id="answer-520540" class="answer" data-answerid="520540" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input name="_id_" value="520540" type="hidden">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span itemprop="upvoteCount" class="vote-count-post ">0</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>I started trying to figure this out and never really succeeded.  This was as close as I got:</p>
+
+<pre style="" class="lang-dos prettyprint prettyprinted"><code><span class="lit">@echo</span><span class="pln"> off
+</span><span class="kwd">if</span><span class="pln"> </span><span class="kwd">not</span><span class="pln"> </span><span class="kwd">defined</span><span class="pln"> PIL </span><span class="pun">(</span><span class="pln">
+    </span><span class="kwd">set</span><span class="pln"> PIL</span><span class="pun">=</span><span class="lit">1</span><span class="pln">
+    start </span><span class="pun">/</span><span class="pln">min </span><span class="str">""</span><span class="pln"> </span><span class="pun">%~</span><span class="lit">0</span><span class="pln">
+    </span><span class="kwd">exit</span><span class="pln"> </span><span class="pun">/</span><span class="pln">b
+</span><span class="pun">)</span><span class="pln">
+TITLE </span><span class="typ">Hello</span><span class="pln"> </span><span class="typ">World</span><span class="pln">
+echo </span><span class="typ">Hello</span><span class="pln"> world</span><span class="pun">!</span><span class="pln">
+pause</span><span class="pun">&gt;</span><span class="pln">nul</span></code></pre>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://superuser.com/a/520540" title="short permalink to this answer" class="short-link" id="link-post-520540">share</a><span class="lsep">|</span><a href="http://superuser.com/posts/520540/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td class="post-signature" align="right">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://superuser.com/posts/520540/revisions" title="show all edits to this post">edited <span title="2014-08-16 02:45:49Z" class="relativetime">Aug 16 at 2:45</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://superuser.com/users/11906/stein-%c3%85smul"><div class="gravatar-wrapper-32"><img src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/6a53d34f1b2db6b947e8744cf331454b.png" alt="" height="32" width="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://superuser.com/users/11906/stein-%c3%85smul">Stein Åsmul</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">409</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="6 silver badges"><span class="badge2"></span><span class="badgecount">6</span></span><span title="14 bronze badges"><span class="badge3"></span><span class="badgecount">14</span></span>
+    </div>
+</div>    </td>
+            
+
+
+    <td class="post-signature" align="right">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2012-12-17 17:03:50Z" class="relativetime">Dec 17 '12 at 17:03</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://superuser.com/users/9571/djangofan"><div class="gravatar-wrapper-32"><img src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/f2tOS.jpg" alt="" height="32" width="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://superuser.com/users/9571/djangofan">djangofan</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">1,059</span><span title="4 gold badges"><span class="badge1"></span><span class="badgecount">4</span></span><span title="15 silver badges"><span class="badge2"></span><span class="badgecount">15</span></span><span title="26 bronze badges"><span class="badge3"></span><span class="badgecount">26</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-520540" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+            <div id="comments-link-520540" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span><a class="js-show-link comments-link dno" title="expand to show all comments on this post, or add one of your own" href="#" onclick=""></a>
+            </div>
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="816256"></a>
+<div id="answer-816256" class="answer" data-answerid="816256" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input name="_id_" value="816256" type="hidden">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span itemprop="upvoteCount" class="vote-count-post ">0</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>I did it successfully with nircmd this way:</p>
+
+<ol>
+<li>download nircmd.exe from web</li>
+<li>create your .bat file</li>
+<li>the first line of .bat file has to be this: nircmd.exe win hide ititle "cmd.exe"</li>
+<li>select both files and create a self extract file using winrar</li>
+<li>in "general" tab, check "create autoextract file" box</li>
+<li>in "advance" tab select "autoextract" button</li>
+<li>there is a new window and select "mode" tab then select option: "hide everything"</li>
+<li>select tab "update" and select option "overwrite existing files"</li>
+<li>Select "general" tab and define a destination folder for extraction 
+if you wish and in the box "Excecute after extraction" write the full 
+path where your .bat will be extracted.
+Ex: if you define extraction folder as: "c:\windows\" then the full path
+ to excute after extraction will be: "c:\windows\file.bat" (in the case 
+your .bat is named: file.bat)</li>
+<li>click accept on all windows</li>
+</ol>
+
+<p>Now you will have a .exe file that after you doble click on it and install it, your .bat will run totally hided.</p>
+
+<p>ZEUS</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://superuser.com/a/816256" title="short permalink to this answer" class="short-link" id="link-post-816256">share</a><span class="lsep">|</span><a href="http://superuser.com/posts/816256/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td class="post-signature" align="right">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2014-09-24 17:58:35Z" class="relativetime">Sep 24 at 17:58</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://superuser.com/users/371880/zeus"><div class="gravatar-wrapper-32"><img src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/81b1ed805b1ec36b99ed9d1d4ce3c999.png" alt="" height="32" width="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://superuser.com/users/371880/zeus">ZEUS</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">1</span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-816256" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+            <div id="comments-link-816256" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span><a class="js-show-link comments-link dno" title="expand to show all comments on this post, or add one of your own" href="#" onclick=""></a>
+            </div>
+    </td>
+</tr>    </tbody></table>
+</div>
+									<a name="new-answer"></a>
+						<form id="post-form" action="/questions/62525/answer/submit" method="post" class="dno post-form">
+						    <input id="post-id" value="62525" type="hidden">
+                            <input id="qualityBanWarningShown" name="qualityBanWarningShown" value="false" type="hidden">
+                            <input name="referrer" value="http://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=7&amp;ved=0CEwQFjAG&amp;url=http%3A%2F%2Fsuperuser.com%2Fquestions%2F62525%2Frun-a-batch-file-in-a-completely-hidden-way&amp;ei=bd9gVKSuII2BygTWkICAAg&amp;usg=AFQjCNGZNlgwuBfmUcWnFs2mS9w2SzPpSQ&amp;sig2=-SEOvv57SZoW3dMKCAqwyg&amp;bvm=bv.79189006,d.aWw&amp;cad=rja" type="hidden">
+							<h2 class="space">Your Answer</h2>
+
+
+
+        
+
+<script>
+    StackExchange.ready(function() {
+        initTagRenderer("".split(" "), "".split(" "));
+       
+        StackExchange.using("externalEditor", function() {
+            // Have to fire editor after snippets, if snippets enabled
+            if (StackExchange.options.snippets.enabled) {
+                StackExchange.using("snippets", function() {
+                    createEditor();
+                });
+            }
+            else {
+                createEditor();
+            }
+        });
+
+        function createEditor() {
+            prepareEditor({
+                heartbeatType: 'answer',
+                bindNavPrevention: true,
+                postfix: "",
+                    onDemand: false,
+                    discardSelector: ".discard-answer"
+                ,immediatelyShowMarkdownHelp:true
+                });
+                
+
+        }
+    });  
+</script>
+
+
+<div id="post-editor" class="post-editor">
+
+    <div style="position: relative;">     
+        <div class="wmd-container">
+            <div id="wmd-button-bar" class="wmd-button-bar"></div>
+            <textarea id="wmd-input" class="wmd-input" name="post-text" cols="92" rows="15" tabindex="101" data-min-length=""></textarea>
+        </div>
+    </div>
+
+    <div class="fl" style="margin-top: 8px; height:24px;">&nbsp;</div>
+    <div id="draft-saved" class="draft-saved community-option fl" style="margin-top: 8px; height:24px; display:none;">draft saved</div>
+
+    <div id="draft-discarded" class="draft-discarded community-option fl" style="margin-top: 8px; height:24px; display:none;">draft discarded</div>
+
+
+
+    <div id="wmd-preview" class="wmd-preview"></div>
+    <div></div>
+    <div class="edit-block">
+        <input id="fkey" name="fkey" value="888d3a72182d6ae5137cfd1a020c1f56" type="hidden">
+        <input id="author" name="author" type="text">
+    </div>
+</div>
+							<div style="position: relative;">
+								
+            <div class="form-item new-post-login">
+        
+                <div class="new-login-form">
+                    <div class="new-login-left">
+                        <h3>Sign up or <a id="login-link" href="http://superuser.com/users/login?returnurl=%2fquestions%2f62525%2frun-a-batch-file-in-a-completely-hidden-way%23new-answer">log in</a></h3>
+                        <script>
+                            StackExchange.ready(function () {
+                                StackExchange.helpers.onClickDraftSave('#login-link');
+                            });
+                        </script>
+                        <div class="preferred-login google-login">
+                            <p><span class="icon"></span><span>Sign up using Google</span></p>
+                        </div>
+                        <div class="preferred-login facebook-login">
+                            <p><span class="icon"></span><span>Sign up using Facebook</span></p>
+                        </div>
+                        <div class="preferred-login stackexchange-login">
+                            <p><span class="icon"></span><span>Sign up using Stack Exchange</span></p>
+                        </div>
+                    </div>
+                    <input name="manual-openid" class="manual-openid" type="hidden">
+                    <input name="use-facebook" class="use-facebook" value="false" type="hidden">
+                    <input name="use-google" class="use-google" value="false" type="hidden">
+                    <input class="submit-openid" value="Submit" style="display:none" type="button">
+                    <div class="new-login-right">
+                                <h3>Post as a guest</h3>
+    <div class="form-item">
+        <table>
+        <tbody><tr>
+                    <script>
+                StackExchange.ready(function () {
+                    StackExchange.helpers.bindHelpOverlayEvents($('.vm input'));
+                });
+            </script>
+            <td class="vm">
+                <div>
+                    <label for="display-name">Name</label>
+                    <input id="display-name" name="display-name" size="30" maxlength="30" tabindex="105" type="text">
+                </div>
+                <div>
+                    <label for="m-address">Email</label>
+                    <input id="m-address" name="m-address" size="30" maxlength="100" tabindex="106" type="text">
+                    <span class="edit-field-overlay">required, but not shown</span>
+                </div>
+            </td>
+        </tr>
+        </tbody></table>
+    </div>
+
+                    </div>
+                </div>
+            </div>
+            <script>
+                StackExchange.ready(
+                    function () {
+                        StackExchange.openid.initPostLogin('.new-post-login', '%2fquestions%2f62525%2frun-a-batch-file-in-a-completely-hidden-way%23new-answer');
+                    }
+                );
+            </script>
+            <noscript>
+                        <h3>Post as a guest</h3>
+    <div class="form-item">
+        <table>
+        <tr>
+                    <script>
+                StackExchange.ready(function () {
+                    StackExchange.helpers.bindHelpOverlayEvents($('.vm input'));
+                });
+            </script>
+            <td class="vm">
+                <div>
+                    <label for="display-name">Name</label>
+                    <input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105">
+                </div>
+                <div>
+                    <label for="m-address">Email</label>
+                    <input id="m-address" name="m-address" type="text" size="30" maxlength="100" value="" tabindex="106">
+                    <span class="edit-field-overlay">required, but not shown</span>
+                </div>
+            </td>
+        </tr>
+        </table>
+    </div>
+
+            </noscript>
+							</div>
+           
+															<div class="form-submit cbt">
+									<input id="submit-button" value="Post Your Answer" tabindex="110" type="submit">
+									<a href="#" class="discard-answer dno">discard</a>
+
+<p class="privacy-policy-agreement">
+By posting your answer, you agree to the <a href="http://stackexchange.com/legal/privacy-policy" target="_blank">privacy policy</a> and <a href="http://stackexchange.com/legal/terms-of-service" target="_blank">terms of service</a>.</p>
+<input name="legalLinksShown" value="1" type="hidden">								</div>
+						</form>
+							<div id="show-editor-button" class="form-submit">
+                                <input value="Answer This Question" data-confirm-text="This question has more than 15 answers already.
+
+Did you read through all the existing answers first to make sure your answer will be contributing something new?
+
+Also, please note that you can click the edit link on any of these answers to improve them." data-confirm-use-fancy="False" data-confirm-fancy-title="" data-confirm-fancy-body="" data-confirm-fancy-accept-button="" type="button">
+							</div>
+							<script>
+								StackExchange.ready(function () {
+								    $("#show-editor-button input").click(function () {
+								        var showEditor = function() {
+								            $("#show-editor-button").hide();
+								            $("#post-form").removeClass("dno");
+								            StackExchange.editor.finallyInit();
+								        };
+
+								        var useFancy = $(this).data('confirm-use-fancy');
+								        if(useFancy == 'True') {
+								            var popupTitle = $(this).data('confirm-fancy-title');
+								            var popupBody = $(this).data('confirm-fancy-body');
+								            var popupAccept = $(this).data('confirm-fancy-accept-button');
+                                            
+								            $(this).loadPopup({
+								                url: '/post/self-answer-popup',
+								                loaded: function(popup) {
+								                    var pTitle = $(popup).find('h2');
+								                    var pBody = $(popup).find('.popup-body');
+								                    var pSubmit = $(popup).find('.popup-submit');
+
+								                    pTitle.text(popupTitle);
+								                    pBody.html(popupBody);
+								                    pSubmit.val(popupAccept).click(
+                                                        function() {
+                                                            StackExchange.helpers.closePopups($(popup));
+                                                            showEditor();
+                                                        }
+                                                    );
+
+								                    StackExchange.helpers.bindMovablePopups();
+								                }
+								            })
+								        } else{
+								            var confirmText = $(this).data('confirm-text');
+								            if (confirmText ? confirm(confirmText) : true) {
+								                showEditor();
+								            }
+								        }
+									});
+								});
+							</script>
+
+
+
+						<h2 class="bottom-notice" data-loc="1">
+Not the answer you're looking for?							Browse other questions tagged <a href="http://superuser.com/questions/tagged/windows" class="post-tag" title="show questions tagged 'windows'" rel="tag">windows</a> <a href="http://superuser.com/questions/tagged/command-line" class="post-tag" title="show questions tagged 'command-line'" rel="tag">command-line</a> <a href="http://superuser.com/questions/tagged/batch" class="post-tag" title="show questions tagged 'batch'" rel="tag">batch</a>  or <a href="http://superuser.com/questions/ask">ask your own question</a>.						</h2>
+			</div>
+		</div>
+				<div id="sidebar" class="show-votes">
+						    <div class="module question-stats">
+			        <table id="qinfo">
+			            <tbody><tr>
+			                <td>
+			                    <p class="label-key">asked</p>
+			                </td>
+			                <td style="padding-left: 10px">
+			                    <p class="label-key" title="2009-10-29 12:42:48Z"><b>5 years ago</b></p>
+			                </td>
+			            </tr>
+			            <tr>
+			                <td>
+			                    <p class="label-key">viewed</p>
+			                </td>
+
+			                <td style="padding-left: 10px">
+			                    <p class="label-key">
+			                        <b>124168 times</b>
+			                    </p>
+			                </td>
+			            </tr>
+			                <tr>
+			                    <td>
+			                        <p class="label-key">active</p>
+			                    </td>
+			                    <td style="padding-left: 10px">
+			                        <p class="label-key"><b><a href="http://superuser.com/questions/62525/run-a-batch-file-in-a-completely-hidden-way?lastactivity" class="lastactivity-link" title="2014-09-24 17:58:35Z">1 month ago</a></b></p>
+			                    </td>
+			                </tr>
+			        </tbody></table>
+			    </div>
+						
+			<script>
+                var ados = ados || {};ados.run = ados.run || [];
+                ados.run.push(function() { ados_add_placement(22,8476,"adzerk375387556",17).setZone(47) ; });                    
+            </script>
+            <div class="everyonelovesstackoverflow adzerk-vote" id="adzerk375387556"><a href="http://engine.adzerk.net/r?e=eyJhdiI6NDE0LCJhdCI6MTcsImJ0IjowLCJjbSI6ODQxLCJjaCI6MTE3OCwiY3IiOjgyMTEsImRpIjoiNWM2ZjkxZGQzZTIyNDlkYWJjN2IwY2IzZmZiZWY5NmMiLCJkbSI6MSwiZmMiOjE0ODU1LCJmbCI6MjQyMywiaXAiOiIyNC4xMzYuMTAwLjE3NCIsImt3Ijoid2luZG93cyxjb21tYW5kLWxpbmUsYmF0Y2giLCJudyI6MjIsInBjIjowLCJwciI6MTU2OCwicnQiOjEsInJmIjoiaHR0cDovL3d3dy5nb29nbGUuY29tL3VybD9zYT10JnJjdD1qJnE9JmVzcmM9cyZzb3VyY2U9d2ViJmNkPTcmdmVkPTBDRXdRRmpBRyZ1cmw9aHR0cDovL3N1cGVydXNlci5jb20vcXVlc3Rpb25zLzYyNTI1L3J1bi1hLWJhdGNoLWZpbGUtaW4tYS1jb21wbGV0ZWx5LWhpZGRlbi13YXkmZWk9YmQ5Z1ZLU3VJSTJCeWdUV2tJQ0FBZyZ1c2c9QUZRakNOR1pObGd3dUJmbVVjV25GczJtUzl3MlN6UHBTUSZzaWcyPS1TRU92djU3U1pvVzNkTUtDQXF3eWcmYnZtPWJ2Ljc5MTg5MDA2LGQuYVd3JmNhZD1yamEiLCJzdCI6ODQ3NiwidWsiOiJ1ZTEtZjA1NTczYzIxZjFjNGRkOTgyNzg3MzVjYmJkYzEyMTYiLCJ6biI6NDcsInRzIjoxNDE1NjM0ODE1OTAyLCJ1ciI6Imh0dHA6Ly9jYXJlZXJzLnN0YWNrb3ZlcmZsb3cuY29tP3V0bV9zb3VyY2U9c3RhY2tleGNoYW5nZS5jb20mdXRtX21lZGl1bT1hZCZ1dG1fY2FtcGFpZ249aG91c2UtYWRzLWNhdGNoLWFsbC1hbGwtc2l0ZXMmdXRtX2NvbnRlbnQ9c2ItaGVhcnQtY29kZSJ9&amp;s=ESjGvnCmHwJOYDg8KxU60HRv9R0" rel="nofollow" target="_blank" title=""><img src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/bd294ce7ff4c43b6aad4aa4169fb819b.jpg" title="" alt="" height="250" width="220" border="0"></a><div class="adzerk-vote-controls" style="display:none;"><div class="adzerk-vote-option adzerk-vote-up"><div class="adzerk-vote-icon"></div></div><div class="adzerk-vote-option adzerk-vote-down"><div class="adzerk-vote-icon"></div></div></div><div class="adzerk-vote-survey" style="display:none;"><form><span>No problem. We won't show you that ad again. Why didn't you like it?</span><ul><li><label><input value="12" name="downvoteReason" type="radio">Uninteresting</label></li><li><label><input value="13" name="downvoteReason" type="radio">Misleading</label></li><li><label><input value="14" name="downvoteReason" type="radio">Offensive</label></li><li><label><input value="15" name="downvoteReason" type="radio">Repetitive</label></li></ul><a href="#" class="adzerk-vote-cancel">Oops! I didn't mean to do this.</a></form></div><img src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/i_002.gif" style="position:absolute;" height="0px" width="0px" border="0"></div>
+			  
+    
+            <div class="module sidebar-linked">
+	<h4 id="h-linked">Linked</h4>
+	<div class="linked" data-tracker="lq=1">
+<div class="spacer">
+	<a href="http://superuser.com/q/210770?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">0</div>
+	</a>
+	<a href="http://superuser.com/questions/210770/how-to-run-bat-file-in-background?lq=1" class="question-hyperlink">How to run bat file in background?</a>
+</div><div class="spacer">
+	<a href="http://superuser.com/q/229390?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">2</div>
+	</a>
+	<a href="http://superuser.com/questions/229390/execute-batch-file-in-invisible-mode?lq=1" class="question-hyperlink">execute batch file in invisible mode</a>
+</div><div class="spacer">
+	<a href="http://superuser.com/q/288223?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="http://superuser.com/questions/288223/batch-file-with-dos-box-hidden?lq=1" class="question-hyperlink">Batch file with DOS box hidden?</a>
+</div><div class="spacer">
+	<a href="http://superuser.com/q/355438?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="http://superuser.com/questions/355438/generic-stealther-for-programs?lq=1" class="question-hyperlink">Generic Stealth(er) for Programs</a>
+</div><div class="spacer">
+	<a href="http://superuser.com/q/191149?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">10</div>
+	</a>
+	<a href="http://superuser.com/questions/191149/how-to-execute-cmd-exe-silently?lq=1" class="question-hyperlink">How To Execute Cmd.exe Silently?</a>
+</div><div class="spacer">
+	<a href="http://superuser.com/q/210059?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">8</div>
+	</a>
+	<a href="http://superuser.com/questions/210059/stop-taskeng-exe-window-from-popping-up?lq=1" class="question-hyperlink">Stop taskeng.exe window from popping up</a>
+</div><div class="spacer">
+	<a href="http://superuser.com/q/559736?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">0</div>
+	</a>
+	<a href="http://superuser.com/questions/559736/avoid-system-will-shut-down-in-10-minutes-using-shutdown-on-windows?lq=1" class="question-hyperlink">Avoid “system will shut down in 10 minutes” using shutdown on windows</a>
+</div><div class="spacer">
+	<a href="http://superuser.com/q/654828?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">2</div>
+	</a>
+	<a href="http://superuser.com/questions/654828/how-do-i-get-a-bat-file-to-run-in-task-scheduler-at-pc-startup?lq=1" class="question-hyperlink">How do I get a .bat file to run in Task Scheduler at PC Startup?</a>
+</div><div class="spacer">
+	<a href="http://superuser.com/q/598389?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">5</div>
+	</a>
+	<a href="http://superuser.com/questions/598389/task-scheduler-how-to-run-powershell-script-with-multiple-parameters?lq=1" class="question-hyperlink">Task Scheduler - how to run powershell script with multiple parameters?</a>
+</div><div class="spacer">
+	<a href="http://superuser.com/q/723050?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">1</div>
+	</a>
+	<a href="http://superuser.com/questions/723050/launch-multiple-programs-in-background-on-windows-8-1?lq=1" class="question-hyperlink">Launch multiple programs in background on windows 8.1</a>
+</div>					<div class="spacer more">
+				<a href="http://superuser.com/questions/linked/62525?lq=1">see more linked questions…</a>
+			</div>
+	</div>
+</div>
+
+				<div class="module sidebar-related">
+					<h4 id="h-related">Related</h4>
+                    <div class="related js-gps-related-questions" data-tracker="rq=1">
+                        <div class="spacer js-gps-track">
+<a href="http://superuser.com/q/265095?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">1
+    </div>
+</a><a href="http://superuser.com/questions/265095/how-to-create-a-windows-user-from-the-command-line-using-a-password-from-a-file?rq=1" class="question-hyperlink">How to create a windows user from the command line, using a password from a file</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://superuser.com/q/403100?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes default">2
+    </div>
+</a><a href="http://superuser.com/questions/403100/is-there-a-way-to-copy-the-file-paths-of-all-active-windows-opened-files-for?rq=1" class="question-hyperlink">Is
+ there a way to copy the file paths of ALL active windows' opened files?
+ (for saving and restoring your Windows session across a restart)</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://superuser.com/q/453204?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes default">0
+    </div>
+</a><a href="http://superuser.com/questions/453204/what-is-the-most-common-efficient-way-of-managing-collections-of-batch-files?rq=1" class="question-hyperlink">what is the most common/efficient way of managing collections of batch files?</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://superuser.com/q/670049?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">0
+    </div>
+</a><a href="http://superuser.com/questions/670049/batch-file-to-create-many-files-with-special-characters?rq=1" class="question-hyperlink">Batch file to create many files with special characters</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://superuser.com/q/674986?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes default">0
+    </div>
+</a><a href="http://superuser.com/questions/674986/organizing-images-by-resolution-with-batch-files?rq=1" class="question-hyperlink">organizing images by resolution with batch files</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://superuser.com/q/693433?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">0
+    </div>
+</a><a href="http://superuser.com/questions/693433/concrete-cases-for-cmd-batch-use?rq=1" class="question-hyperlink">Concrete cases for CMD/BATCH use</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://superuser.com/q/693515?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes default">1
+    </div>
+</a><a href="http://superuser.com/questions/693515/task-doesnt-complete-if-it-is-run-by-system-so-its-hidden?rq=1" class="question-hyperlink">Task doesn't complete if it is run by System (so it's hidden)</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://superuser.com/q/741909?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">1
+    </div>
+</a><a href="http://superuser.com/questions/741909/batch-file-skip-a-step-if-an-error-occurs?rq=1" class="question-hyperlink">Batch file, skip a step if an error occurs</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://superuser.com/q/769319?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">0
+    </div>
+</a><a href="http://superuser.com/questions/769319/how-do-i-concatenate-files-using-a-list-and-batch?rq=1" class="question-hyperlink">How do I concatenate files using a list and batch?</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://superuser.com/q/786905?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">1
+    </div>
+</a><a href="http://superuser.com/questions/786905/batch-command-for-searching-replacing-text-in-a-text-containing-non-txt-file?rq=1" class="question-hyperlink">Batch command for Searching &amp; Replacing Text in a Text containing non-TXT file</a>
+</div>
+
+                    </div>
+				</div>
+            
+<div id="hot-network-questions" class="module">
+    <h4>
+        <a href="http://stackexchange.com/questions?tab=hot" class="js-gps-track" data-gps-track="posts_hot_network.click({ item_type:1, location:11 })">
+            Hot Network Questions
+        </a>
+    </h4>
+    <ul>
+            <li>
+                <div class="favicon favicon-academia" title="Academia Stack Exchange"></div><a href="http://academia.stackexchange.com/questions/31405/would-a-5-year-prison-sentence-totally-ruin-ones-academic-career" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:415 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Would a 5-year prison sentence totally ruin one's academic career?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-puzzling" title="Puzzling Stack Exchange"></div><a href="http://puzzling.stackexchange.com/questions/3881/connect-four-towers-by-roads" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:559 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Connect four towers by roads
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-cs" title="Computer Science Stack Exchange"></div><a href="http://cs.stackexchange.com/questions/32845/why-really-is-the-halting-problem-important" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:419 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why, really, is the Halting Problem important?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-english" title="English Language &amp; Usage Stack Exchange"></div><a href="http://english.stackexchange.com/questions/207123/who-is-another-champion-in-president-obama-s-speech-the-biggest-corporation" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:97 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Who is ‘another champion’ in President’ Obama’s 
+speech "The biggest corporation don't need another champion. You do."
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-bicycles" title="Bicycles Stack Exchange"></div><a href="http://bicycles.stackexchange.com/questions/25573/push-off-with-left-or-right-leg" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:126 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Push off with left or right leg
+                </a>
+
+            </li>
+            <li style="display: list-item;" class="dno js-hidden">
+                <div class="favicon favicon-mathoverflow" title="MathOverflow"></div><a href="http://mathoverflow.net/questions/186708/big-list-of-repositories-of-mathematical-preprints-and-postprints" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:504 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Big list of repositories of mathematical preprints and postprints
+                </a>
+
+            </li>
+            <li style="display: list-item;" class="dno js-hidden">
+                <div class="favicon favicon-codereview" title="Code Review Stack Exchange"></div><a href="http://codereview.stackexchange.com/questions/69370/monte-carlo-pi-calculation" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:196 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Monte Carlo pi calculation
+                </a>
+
+            </li>
+            <li style="display: list-item;" class="dno js-hidden">
+                <div class="favicon favicon-math" title="Mathematics Stack Exchange"></div><a href="http://math.stackexchange.com/questions/1014472/simple-why-question-about-modular-arithmetic-13-mod-5" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:69 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    simple 'why' question about modular arithmetic 13 mod 5
+                </a>
+
+            </li>
+            <li style="display: list-item;" class="dno js-hidden">
+                <div class="favicon favicon-travel" title="Travel Stack Exchange"></div><a href="http://travel.stackexchange.com/questions/38464/is-there-an-ontology-of-geographical-entities-to-visit" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:273 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is there an ontology of geographical entities to visit?
+                </a>
+
+            </li>
+            <li style="display: list-item;" class="dno js-hidden">
+                <div class="favicon favicon-stats" title="Cross Validated"></div><a href="http://stats.stackexchange.com/questions/123368/studentized-residuals-undefined" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:65 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Studentized residuals undefined
+                </a>
+
+            </li>
+            <li style="display: list-item;" class="dno js-hidden">
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/3891/dietary-requirements-of-giant-spiders" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Dietary Requirements of Giant Spiders
+                </a>
+
+            </li>
+            <li style="display: list-item;" class="dno js-hidden">
+                <div class="favicon favicon-dba" title="Database Administrators Stack Exchange"></div><a href="http://dba.stackexchange.com/questions/82304/sql-server-grant-execute-on-all-stored-procedures-without-ddl-permissions" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:182 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    SQL Server Grant execute on all stored procedures without ddl permissions
+                </a>
+
+            </li>
+            <li style="display: list-item;" class="dno js-hidden">
+                <div class="favicon favicon-math" title="Mathematics Stack Exchange"></div><a href="http://math.stackexchange.com/questions/1014535/is-there-any-intuitive-understanding-of-normal-subgroup" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:69 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is there any intuitive understanding of normal subgroup?
+                </a>
+
+            </li>
+            <li style="display: list-item;" class="dno js-hidden">
+                <div class="favicon favicon-blender" title="Blender Stack Exchange"></div><a href="http://blender.stackexchange.com/questions/18697/lighting-without-highly-visible-shadows" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:502 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Lighting without highly visible shadows
+                </a>
+
+            </li>
+            <li style="display: list-item;" class="dno js-hidden">
+                <div class="favicon favicon-stackoverflow" title="Stack Overflow"></div><a href="http://stackoverflow.com/questions/26841590/prioritizing-class-specializations" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:1 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Prioritizing class specializations
+                </a>
+
+            </li>
+            <li style="display: list-item;" class="dno js-hidden">
+                <div class="favicon favicon-academia" title="Academia Stack Exchange"></div><a href="http://academia.stackexchange.com/questions/31465/is-it-acceptable-to-submit-more-than-one-papers-to-a-conference" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:415 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is it acceptable to submit more than one papers to a conference?
+                </a>
+
+            </li>
+            <li style="display: list-item;" class="dno js-hidden">
+                <div class="favicon favicon-ell" title="English Language Learners Stack Exchange"></div><a href="http://ell.stackexchange.com/questions/39062/the-turkey-sex-question" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:481 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    The Turkey sex question
+                </a>
+
+            </li>
+            <li style="display: list-item;" class="dno js-hidden">
+                <div class="favicon favicon-tex" title="TeX - LaTeX Stack Exchange"></div><a href="http://tex.stackexchange.com/questions/211456/why-has-no-one-told-me-i-can-use-rubber-lengths-for-graphics-is-that-bad" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:85 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why has no one told me I can use rubber lengths for graphics? Is that bad?
+                </a>
+
+            </li>
+            <li style="display: list-item;" class="dno js-hidden">
+                <div class="favicon favicon-math" title="Mathematics Stack Exchange"></div><a href="http://math.stackexchange.com/questions/1014993/number-of-spanning-trees-of-this-graph" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:69 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Number of spanning trees of this graph
+                </a>
+
+            </li>
+            <li style="display: list-item;" class="dno js-hidden">
+                <div class="favicon favicon-rpg" title="Role-playing Games Stack Exchange"></div><a href="http://rpg.stackexchange.com/questions/50671/how-can-i-learn-how-to-lay-out-an-evidence-scene" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:122 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How can I learn how to lay out an "evidence scene"?
+                </a>
+
+            </li>
+            <li style="display: list-item;" class="dno js-hidden">
+                <div class="favicon favicon-physics" title="Physics Stack Exchange"></div><a href="http://physics.stackexchange.com/questions/145841/energy-and-work" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:151 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Energy and work
+                </a>
+
+            </li>
+            <li style="display: list-item;" class="dno js-hidden">
+                <div class="favicon favicon-puzzling" title="Puzzling Stack Exchange"></div><a href="http://puzzling.stackexchange.com/questions/3637/two-sisters-born-on-the-same-day" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:559 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Two sisters born on the same day
+                </a>
+
+            </li>
+            <li style="display: list-item;" class="dno js-hidden">
+                <div class="favicon favicon-mathematica" title="Mathematica Stack Exchange"></div><a href="http://mathematica.stackexchange.com/questions/65304/visualizing-line-integrals" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:387 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Visualizing Line Integrals
+                </a>
+
+            </li>
+            <li style="display: list-item;" class="dno js-hidden">
+                <div class="favicon favicon-superuser" title="Super User"></div><a href="http://superuser.com/questions/837922/force-a-file-to-be-opened-using-an-application-in-the-same-drive-usb" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:3 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Force a file to be opened using an application in the same drive (USB)
+                </a>
+
+            </li>
+    </ul>
+
+        
+</div>
+		</div>
+	
+<div id="feed-link">
+    <div id="feed-link-text">
+        <a href="http://superuser.com/feeds/question/62525" title="feed of this question and its answers">
+            <span class="feed-icon"></span>question feed
+        </a>
+    </div>
+</div>	<script>
+StackExchange.ready(function(){$.get('/posts/62525/ivc/823a');});
+</script>
+<noscript>
+    <div><img src="/posts/62525/ivc/823a" class="dno" alt="" width="0" height="0"></div>
+</noscript><div style="display:none" id="prettify-lang"></div></div>
+
+
+
+        </div>
+    </div>
+    <div id="footer" class="categories">
+        <div class="footerwrap">
+            <div id="footer-menu">
+                <div class="top-footer-links">
+                        <a href="http://superuser.com/tour">tour</a>
+                    <a href="http://superuser.com/help">help</a>
+                        <a href="http://superuser.com/help/badges">badges</a>
+                    <a href="http://blog.superuser.com/?blb=1">blog</a>
+                        <a href="http://chat.stackexchange.com/">chat</a>
+                    <a href="http://data.stackexchange.com/">data</a>
+                    <a href="http://stackexchange.com/legal">legal</a>
+                    <a href="http://stackexchange.com/legal/privacy-policy">privacy policy</a>
+                    <a href="http://stackexchange.com/work-here">work here</a>
+                    <a href="http://stackexchange.com/mediakit">advertising info</a>
+
+                    <a onclick='StackExchange.switchMobile("on")'>mobile</a>
+                    <b><a href="http://superuser.com/contact">contact us</a></b>
+                        <b><a href="http://meta.superuser.com/">feedback</a></b>
+                    
+                </div>
+                <div id="footer-sites">
+                    <table>
+    <tbody><tr>
+            <th colspan="3">
+                Technology
+            </th>
+            <th>
+                Life / Arts
+            </th>
+            <th>
+                Culture / Recreation
+            </th>
+            <th>
+                Science
+            </th>
+            <th>
+                Other
+            </th>
+    </tr>
+    <tr>
+            <td>
+                <ol>
+                        <li><a href="http://stackoverflow.com/" title="professional and enthusiast programmers">Stack Overflow</a></li>
+                        <li><a href="http://serverfault.com/" title="professional system and network administrators">Server Fault</a></li>
+                        <li><a href="http://superuser.com/" title="computer enthusiasts and power users">Super User</a></li>
+                        <li><a href="http://webapps.stackexchange.com/" title="power users of web applications">Web Applications</a></li>
+                        <li><a href="http://askubuntu.com/" title="Ubuntu users and developers">Ask Ubuntu</a></li>
+                        <li><a href="http://webmasters.stackexchange.com/" title="pro webmasters">Webmasters</a></li>
+                        <li><a href="http://gamedev.stackexchange.com/" title="professional and independent game developers">Game Development</a></li>
+                        <li><a href="http://tex.stackexchange.com/" title="users of TeX, LaTeX, ConTeXt, and related typesetting systems">TeX - LaTeX</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://programmers.stackexchange.com/" title="professional programmers interested in conceptual questions about software development">Programmers</a></li>
+                        <li><a href="http://unix.stackexchange.com/" title="users of Linux, FreeBSD and other Un*x-like operating systems.">Unix &amp; Linux</a></li>
+                        <li><a href="http://apple.stackexchange.com/" title="power users of Apple hardware and software">Ask Different (Apple)</a></li>
+                        <li><a href="http://wordpress.stackexchange.com/" title="WordPress developers and administrators">WordPress Development</a></li>
+                        <li><a href="http://gis.stackexchange.com/" title="cartographers, geographers and GIS professionals">Geographic Information Systems</a></li>
+                        <li><a href="http://electronics.stackexchange.com/" title="electronics and electrical engineering professionals, students, and enthusiasts">Electrical Engineering</a></li>
+                        <li><a href="http://android.stackexchange.com/" title="enthusiasts and power users of the Android operating system">Android Enthusiasts</a></li>
+                        <li><a href="http://security.stackexchange.com/" title="Information security professionals">Information Security</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://dba.stackexchange.com/" title="database professionals who wish to improve their database skills and learn from others in the community">Database Administrators</a></li>
+                        <li><a href="http://drupal.stackexchange.com/" title="Drupal developers and administrators">Drupal Answers</a></li>
+                        <li><a href="http://sharepoint.stackexchange.com/" title="SharePoint enthusiasts">SharePoint</a></li>
+                        <li><a href="http://ux.stackexchange.com/" title="user experience researchers and experts">User Experience</a></li>
+                        <li><a href="http://mathematica.stackexchange.com/" title="users of Mathematica">Mathematica</a></li>
+                        <li><a href="http://salesforce.stackexchange.com/" title="Salesforce administrators, implementation experts, developers and anybody in-between">Salesforce</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#technology" class="more">
+                                more (13)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://photo.stackexchange.com/" title="professional, enthusiast and amateur photographers">Photography</a></li>
+                        <li><a href="http://scifi.stackexchange.com/" title="science fiction and fantasy enthusiasts">Science Fiction &amp; Fantasy</a></li>
+                        <li><a href="http://graphicdesign.stackexchange.com/" title="Graphic Design professionals, students, and enthusiasts">Graphic Design</a></li>
+                        <li><a href="http://cooking.stackexchange.com/" title="professional and amateur chefs">Seasoned Advice (cooking)</a></li>
+                        <li><a href="http://diy.stackexchange.com/" title="contractors and serious DIYers">Home Improvement</a></li>
+                        <li><a href="http://money.stackexchange.com/" title="people who want to be financially literate">Personal Finance &amp; Money</a></li>
+                        <li><a href="http://academia.stackexchange.com/" title="academics and those enrolled in higher education">Academia</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#lifearts" class="more">
+                                more (10)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://english.stackexchange.com/" title="linguists, etymologists, and serious English language enthusiasts">English Language &amp; Usage</a></li>
+                        <li><a href="http://skeptics.stackexchange.com/" title="scientific skepticism">Skeptics</a></li>
+                        <li><a href="http://judaism.stackexchange.com/" title="those who base their lives on Jewish law and tradition and anyone interested in learning more">Mi Yodeya (Judaism)</a></li>
+                        <li><a href="http://travel.stackexchange.com/" title="road warriors and seasoned travelers">Travel</a></li>
+                        <li><a href="http://christianity.stackexchange.com/" title="committed Christians, experts in Christianity and those interested in learning more">Christianity</a></li>
+                        <li><a href="http://gaming.stackexchange.com/" title="passionate videogamers on all platforms">Arqade (gaming)</a></li>
+                        <li><a href="http://bicycles.stackexchange.com/" title="people who build and repair bicycles, people who train cycling, or commute on bicycles">Bicycles</a></li>
+                        <li><a href="http://rpg.stackexchange.com/" title="gamemasters and players of tabletop, paper-and-pencil role-playing games">Role-playing Games</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#culturerecreation" class="more">
+                                more (21)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://math.stackexchange.com/" title="people studying math at any level and professionals in related fields">Mathematics</a></li>
+                        <li><a href="http://stats.stackexchange.com/" title="people interested in statistics, machine learning, data analysis, data mining, and data visualization">Cross Validated (stats)</a></li>
+                        <li><a href="http://cstheory.stackexchange.com/" title="theoretical computer scientists and researchers in related fields">Theoretical Computer Science</a></li>
+                        <li><a href="http://physics.stackexchange.com/" title="active researchers, academics and students of physics">Physics</a></li>
+                        <li><a href="http://mathoverflow.net/" title="professional mathematicians">MathOverflow</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#science" class="more">
+                                more (7)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://stackapps.com/" title="apps, scripts, and development with the Stack Exchange API">Stack Apps</a></li>
+                        <li><a href="http://meta.stackexchange.com/" title="meta-discussion of the Stack Exchange family of Q&amp;A websites">Meta Stack Exchange</a></li>
+                        <li><a href="http://area51.stackexchange.com/" title="proposing new sites in the Stack Exchange network">Area 51</a></li>
+                        <li><a href="http://careers.stackoverflow.com/?utm_source=stackoverflow.com&amp;utm_medium=site-ui&amp;utm_campaign=footerlink">Stack Overflow Careers</a></li>
+                    
+                </ol>
+            </td>
+    </tr>
+</tbody></table>
+                </div>
+            </div>
+
+            <div id="copyright">
+                site design / logo © 2014 stack exchange inc; user contributions licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc by-sa 3.0</a>                   with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+            <div id="svnrev">
+                rev 2014.11.10.2007
+            </div>
+            
+        </div>
+    <iframe id="global-auth-frame" style="display:none" src="windows%20-%20Run%20a%20batch%20file%20in%20a%20completely%20hidden%20way%20-%20Super%20User_files/read.htm"></iframe></div>
+    <noscript>
+        <div id="noscript-warning">Super User works best with JavaScript enabled<img src="http://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno"></div>
+    </noscript>
+<script>var p = "http", d = "static"; if (document.location.protocol == "https:") { p += "s"; d = "engine"; } var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = p + "://" + d + ".adzerk.net/ados.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script>
+<script>
+    var ados = ados || {};
+    ados.run = ados.run || [];
+    ados.run.push(function () { ados_setKeywords('windows,command-line,batch');; ados_load(); });         
+</script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-5620270-3');        
+        
+        ga('set', 'dimension2', '|windows|command-line|batch|');         
+        ga('send', 'pageview');
+        var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+        (function () {
+            var ssl='https:'==document.location.protocol,
+                s=document.getElementsByTagName('script')[0],
+                qc=document.createElement('script');
+            qc.async=true;
+            qc.src=(ssl?'https://secure':'http://edge')+'.quantserve.com/quant.js';
+            s.parentNode.insertBefore(qc, s);
+            var sc=document.createElement('script');
+            sc.async=true;
+            sc.src=(ssl?'https://sb':'http://b') + '.scorecardresearch.com/beacon.js';
+            s.parentNode.insertBefore(sc, s);
+        })();
+        _comscore.push({ c1: "2", c2: "17440561" });
+        _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+    </script>        
+    
+    
+</body></html>
