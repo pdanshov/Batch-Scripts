@@ -32,7 +32,9 @@ ECHO.
 ::pushd %~dp0
 ::start "" cmd /c cscript necdaily.vbs
 
-cscript C:\MinGW\msys\1.0\MDB_Query.vbs
+start /wait "" cmd /c cscript C:\MinGW\msys\1.0\MDB_Query.vbs
+::cscript C:\MinGW\msys\1.0\MDB_Query.vbs
+::start /wait "" cmd /c cscript necdaily.vbs
 
 Rem C:\MinGW\msys\1.0\bin\sh ~/test.sh
 C:\MinGW\msys\1.0\bin\sh -l C:\MinGW\msys\1.0\home\Administrator\Scripts\PO_Check.sh >> PO_BAT-SH.Log
