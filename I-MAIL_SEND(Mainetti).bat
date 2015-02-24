@@ -1,4 +1,16 @@
 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::
+::			Peter Danshov - pdanshv@gmail.com
+::					02 - 20 - 2015
+::		Updated script to report on file enumeration in
+::		Imail Out folder before send, after send,
+::		and after cleanup. To quickly confirm successful runs.
+::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
 @echo off
 cd C:\edicomm\ARCHIVE\IMAIL_OUT
 ::set "folder=C:\edicomm\ARCHIVE\IMAIL_OUT"
@@ -15,7 +27,7 @@ timeout 3
 ::echo %count% folder(s^)>> !output!
 ::echo %count%
 cd c:\I-Mail
-::Imail.exe
+Imail.exe
 ::for /f %%a in ('dir /b /s /ad %folder%^|find /c /v "" ') do set count=%%a
 cd C:\edicomm\ARCHIVE\IMAIL_OUT
 setlocal enableextensions
